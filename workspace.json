@@ -3,6 +3,9 @@
   "version": 2,
   "projects": {
     "site": "apps/site",
-    "site-e2e": "apps/site-e2e"
+    "site-e2e": "apps/site-e2e",
+    "storybook-e2e-ui-e2e": "apps/storybook-e2e/ui-e2e",
+    "ui": "packages/ui",
+    "ui-header": "packages/ui/header"
   }
 }

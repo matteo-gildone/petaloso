@@ -1,9 +1,12 @@
 import './app.element.css';
+import '@petaloso/ui/header';
+
 export class AppElement extends HTMLElement {
   static observedAttributes = [];
   connectedCallback() {
     const title = 'site';
     this.innerHTML = `
+    <ptl-header site-name="Petaloso"></ptl-header>
     <div class="wrapper">
       <div class="container">
         <!--  WELCOME  -->
