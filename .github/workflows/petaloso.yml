@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - run: npm install
     - run: npx nx run site:build --if-present
     - run: npx nx e2e site-e2e --if-present
     # Deploy to Netlify using our dev secrets
