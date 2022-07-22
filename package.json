@@ -5,7 +5,7 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
-    "@babel/core": "7.12.13",
+    "@babel/core": "7.18.9",
     "@babel/preset-typescript": "7.12.13",
     "@nrwl/cli": "14.4.3",
     "@nrwl/cypress": "14.4.3",
