@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx nx run ui:storybook-build --if-present
-    - run: npx nx e2e site-e2e --if-present
+    - run: npx nx e2e storybook-e2e-ui-e2e --if-present
     # Deploy to Netlify using our dev secrets
     - name: Deploy to netlify
       uses: netlify/actions/cli@master
