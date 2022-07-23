@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: Storybook CI
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npx nx run ui:storybook-build --if-present
+    - run: npx nx run ui:build-storybook --if-present
     - run: npx nx e2e storybook-e2e-ui-e2e --if-present
     # Deploy to Netlify using our dev secrets
     - name: Deploy to netlify
