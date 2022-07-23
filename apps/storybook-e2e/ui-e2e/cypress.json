@@ -9,5 +9,9 @@
   "videosFolder": "../../../dist/cypress/apps/storybook-e2e/ui-e2e/videos",
   "screenshotsFolder": "../../../dist/cypress/apps/storybook-e2e/ui-e2e/screenshots",
   "chromeWebSecurity": false,
-  "baseUrl": "http://localhost:4400"
+  "baseUrl": "http://localhost:4400",
+  "defaultCommandTimeout": 30000,
+  "viewportWidth": 1000,
+  "viewportHeight": 568,
+  "includeShadowDOM": true
 }
